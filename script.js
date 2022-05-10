@@ -14,9 +14,10 @@ function divide(a,b){
     return a / b;
 };
 
-function operate(x,y){
-    result = add(x,y);
-    return result;
+function operate(x,y,operator){
+
+    // result = add(x,y);
+    // return result;
 };
 
 let displayValue;
@@ -27,4 +28,9 @@ const number = numbers.forEach(number => {
         displayValue = parseFloat(number.id);
         display.textContent = displayValue;
     });
+});
+
+buttonClear = document.getElementById("clear");
+buttonClear.addEventListener('click', ()=>{
+    display.textContent = 0;
 });
